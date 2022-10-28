@@ -42,19 +42,18 @@ function devolverString(str) {
     // De lo contrario, devuelve "false"
     // Tu código:
     if(x === y){
-   return "true"
-    }else{ 
-      return "false"}
+   return true
+  }else {return false}
   }
   
   function tienenMismaLongitud(str1, str2) {
     // Devuelve "true" si las dos strings tienen la misma longitud
     // De lo contrario, devuelve "false"
     // Tu código:
-    if(str1.lenght = str2.lenght)
-    { return "true"
+    if(str1.length === str2.length){
+       return true
   }else {
-    return "false"}
+    return false}
   }
   
   function menosQueNoventa(num) {
@@ -62,8 +61,8 @@ function devolverString(str) {
     // De lo contrario, devuelve "false"
     // Tu código:
     if(num < 90){
-      return "true"
-    }else {"false"}
+      return true
+    }else {return false}
   }
   
   function mayorQueCincuenta(num) {
@@ -71,8 +70,8 @@ function devolverString(str) {
     // De lo contrario, devuelve "false"
     // Tu código:
     if(num > 50){
-      return "true"
-    }else {"false"}
+      return true
+    }else {return false}
   }
   
   function obtenerResto(x, y) {
@@ -86,15 +85,18 @@ function devolverString(str) {
     // Devuelve "true" si "num" es par
     // De lo contrario, devuelve "false"
     // Tu código:
-    if(num ){
-      return "true"
-    }else {"false"}
+    if(num % 2 === 0 ){
+      return true
+    }else {return false}
   }
   
   function esImpar(num) {
     // Devuelve "true" si "num" es impar
     // De lo contrario, devuelve "false"
     // Tu código:
+    if(num % 2 !== 0 ){
+      return true
+    }else {return false}
   }
   
   function elevarAlCuadrado(num) {
@@ -122,13 +124,13 @@ function devolverString(str) {
   function redondearNumero(num) {
     // Redondea "num" al entero más próximo y devuélvelo
     // Tu código:
-    return math.round(num) 
+    return Math.round(num) 
   }
   
   function redondearHaciaArriba(num) {
     // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
     // Tu código:
-    return math.floor(num) 
+    return Math.ceil(num) 
   }
   
   function numeroRandom() {
@@ -145,9 +147,9 @@ function devolverString(str) {
     //Si el número es 0, devuelve false
     // Tu código:
     if( numero > 0){
-      return "Es postivio"
+      return "Es positivo"
     }else if(numero < 0) {return "Es negativo"
-   }else { return "false"}
+   }else { return false}
   }
   
   function agregarSimboloExclamacion(str) {
