@@ -21,7 +21,7 @@ function encuentraPares(array){
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
 var numerosPares = []
-for(let i=0 ; i <= array.length ; i++){
+for(let i=0 ; i < array.length ; i++){
   if(array[i] % 2 === 0){
     numerosPares.push(array[i])
   }
@@ -33,15 +33,18 @@ function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
- 
+  var alCuadrado = array.map(cuadrado => cuadrado ** 2)
+  return alCuadrado
 }
+
+
 
 function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
   var suma = 0
-  for(let i = 0 ; i <= array.length ; i++){
+  for(let i = 0 ; i < array.length ; i++){
     suma += array[i]
   }
   return suma
@@ -50,6 +53,9 @@ function sumaArray(array){
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
+  var numeroAString = num +"" // transformo el numero a string para poder aplicar length
+  return numeroAString.length
+
 }
   
   
